@@ -49,6 +49,19 @@ int main()
         }
     }
 
+		// TEST WORKING - 3
+    uint16_t len4;
+    char szVar4[16] = "hello world....";
+    len4 = (uint16_t)strlen(szVar4);
+    if (len4)
+    {
+        char *ptr4 = (char *)calloc(1, 15 * sizeof(char));
+        if (ptr4)
+        {
+            strcpy(ptr4, szVar4);
+        }
+    }
+
 
 
     // NOT WORKING
