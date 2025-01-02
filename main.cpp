@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <sstream>
 #include <cassert>
+#include <stdint.h>
 
 void *OSacquireinternal(size_t Size, int lineNum, const char *fileName)
 {
