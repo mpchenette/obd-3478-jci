@@ -1,12 +1,11 @@
 /**
  * @name abc123
- * @description Buffer write operations that do not control the length
- *              of data written may overflow
+ * @description my descr
  * @kind problem
  * @problem.severity error
  * @security-severity 9.3
  * @precision high
- * @id cpp/very-likely-overrunning-write
+ * @id cpp/my-unique-id
  * @tags reliability
  *       security
  *       external/cwe/cwe-120
