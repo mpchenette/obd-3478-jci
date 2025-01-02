@@ -1,5 +1,5 @@
 /**
- * @name Likely overrunning write
+ * @name abc123
  * @description Buffer write operations that do not control the length
  *              of data written may overflow
  * @kind problem
