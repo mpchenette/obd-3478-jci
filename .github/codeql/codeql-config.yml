@@ -1,0 +1,10 @@
+name: "My CodeQL config"
+
+disable-default-queries: true
+
+queries:
+  - name: Use extended suite
+    uses: security-and-quality
+  # - name: Use an external query (run a single query from an external QL pack)
+  #   uses: adityasharad/ql/java/ql/src/Security/CWE/CWE-502/UnsafeDeserialization.ql@lgtm.com
+  
