@@ -37,15 +37,15 @@ int main()
 
 
     // TEST WORKING - 2
-    uint16_t len;
-    char szVar[16] = "hello world....";
-    len = (uint16_t)strlen(szVar);
-    if (len)
+    uint16_t len3;
+    char szVar3[16] = "hello world....";
+    len3 = (uint16_t)strlen(szVar3);
+    if (len3)
     {
-        char *ptr = (char *)calloc(1, 15 * sizeof(char));
-        if (ptr)
+        char *ptr3 = (char *)calloc(1, 15 * sizeof(char));
+        if (ptr3)
         {
-            strcpy(ptr, szVar);
+            strcpy(ptr3, szVar3);
         }
     }
 
