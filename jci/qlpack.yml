@@ -1,5 +1,7 @@
-name: my-repo/my-cpp-model-pack
-version: 1.2.3
+---
+warnOnImplicitThis: false
+name: mpchenette/wrapper-model-pack
+version: 0.0.5
 library: true
 extensionTargets:
   codeql/cpp-all: ~3.2.0

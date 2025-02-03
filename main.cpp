@@ -16,7 +16,7 @@ void *OSacquireinternal(size_t Size, int lineNum, const char *fileName)
         return (NULL);
     }
 }
-#define OSacquire(a) OSacquireinternal(a, __LINE__, __FILE__)
+// #define OSacquire(a) OSacquireinternal(a, __LINE__, __FILE__)
 
 int main()
 {
@@ -32,12 +32,24 @@ int main()
         }
     }
 
+    // WORKING 2
+    char szVar3[16] = "hello world....";
+    uint16_t len3 = (uint16_t)strlen(szVar3);
+    if (len3)
+    {
+        char *ptr3 = (char *)calloc(1, 15 * sizeof(char));
+        if (ptr3)
+        {
+            strcpy(ptr3, szVar3);
+        }
+    }
+
     // NOT WORKING
     char szVar2[16] = "hello world....";
     uint16_t len2 = (uint16_t)strlen(szVar2);
     if (len2)
     {
-        char *ptr2 = (char *)OSacquire(15 * sizeof(char));
+        char *ptr2 = (char *)OSacquireinternal(15 * sizeof(char), __LINE__, __FILE__);
         if (ptr2)
         {
             strcpy(ptr2, szVar2);

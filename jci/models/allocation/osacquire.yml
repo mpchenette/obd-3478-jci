@@ -1,0 +1,8 @@
+extensions:
+  - addsTo:
+      pack: codeql/cpp-all
+      extensible: allocationFunctionModel
+    data:
+      - ["", "", False, "OSacquireinternal", "0", "", "", True]
+      - ["std", "", False, "OSacquireinternal", "0", "", "", True]
+      - ["bsl", "", False, "OSacquireinternal", "0", "", "", True]
