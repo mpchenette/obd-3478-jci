@@ -16,13 +16,16 @@ void *OSacquireinternal(size_t Size, int lineNum, const char *fileName)
         return (NULL);
     }
 }
+
 #define OSacquire(a) OSacquireinternal(a, __LINE__, __FILE__)
+
 
 int main()
 {
     // WORKING
+    uint16_t len;
     char szVar[16] = "hello world....";
-    uint16_t len = (uint16_t)strlen(szVar);
+    len = (uint16_t)strlen(szVar);
     if (len)
     {
         char *ptr = (char *)calloc(1, 15 * sizeof(char));
@@ -33,8 +36,9 @@ int main()
     }
 
     // NOT WORKING
+    uint16_t len2;
     char szVar2[16] = "hello world....";
-    uint16_t len2 = (uint16_t)strlen(szVar2);
+    len2 = (uint16_t)strlen(szVar2);
     if (len2)
     {
         char *ptr2 = (char *)OSacquire(15 * sizeof(char));

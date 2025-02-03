@@ -14,9 +14,7 @@
  */
 
  import semmle.code.cpp.security.BufferWrite
- import semmle.code.cpp.dataflow.DataFlow
- import semmle.code.cpp.controlflow.ControlFlow
- 
+ import semmle.code.cpp.dataflow.DataFlow 
 
 // Define a custom predicate to get the allocation size through wrapper functions
 predicate getAllocationSizeThroughWrapper(Expr dest, int size) {
