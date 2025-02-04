@@ -61,7 +61,8 @@ jobs:
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
       with:
-        config-file: ./.github/codeql/codeql-config.yml
+        # config-file: ./.github/codeql/codeql-config.yml
+        packs: mpchenette/wrapper-model-pack
         # languages: ${{ matrix.language }}
         # build-mode: none
         # queries: +./${{ env.CI_TMP_DIR }}/codeql/wrapper.ql

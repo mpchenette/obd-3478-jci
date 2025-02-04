@@ -32,18 +32,6 @@ int main()
         }
     }
 
-    // WORKING 2
-    char szVar3[16] = "hello world....";
-    uint16_t len3 = (uint16_t)strlen(szVar3);
-    if (len3)
-    {
-        char *ptr3 = (char *)calloc(1, 15 * sizeof(char));
-        if (ptr3)
-        {
-            strcpy(ptr3, szVar3);
-        }
-    }
-
     // NOT WORKING
     char szVar2[16] = "hello world....";
     uint16_t len2 = (uint16_t)strlen(szVar2);
