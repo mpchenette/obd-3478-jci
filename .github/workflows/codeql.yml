@@ -63,6 +63,7 @@ jobs:
       with:
         # config-file: ./.github/codeql/codeql-config.yml
         packs: mpchenette/wrapper-model-pack
+        token:  ${{ secrets.CLASSIC_PAT }}
         # languages: ${{ matrix.language }}
         # build-mode: none
         # queries: +./${{ env.CI_TMP_DIR }}/codeql/wrapper.ql
