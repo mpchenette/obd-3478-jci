@@ -6,3 +6,6 @@ extensions:
       - ["", "", False, "OSacquireinternal", "0", "", "", True]
       - ["std", "", False, "OSacquireinternal", "0", "", "", True]
       - ["bsl", "", False, "OSacquireinternal", "0", "", "", True]
+      - ["", "", False, "OSacquire", "0", "", "", True]
+      - ["std", "", False, "OSacquire", "0", "", "", True]
+      - ["bsl", "", False, "OSacquire", "0", "", "", True]
